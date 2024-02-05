@@ -34,3 +34,5 @@ console.log(sumFor(list));
 console.log(sumWhile(list));
 console.log(sumRecursion(list));
 console.log(sumTheSimpleWay(list));
+
+//attempt 1 DNF
