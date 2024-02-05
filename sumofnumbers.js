@@ -16,15 +16,14 @@ function sumWhile(list){
   return total;
 }
 
-function sumRecursion(list){
-  let i = list.length;
-  let sum;
-  if(i < 0){
-    return sum;
+function sumRecursion(list) {
+  if (list.length === 0) {
+    return 0;
   }
-  i--;
-  return sum + sumRecursion(list[i]);
+  return list[0] + sumRecursion(list.slice(1));
 }
+
+const _ = require('underscore');
 
 function sumTheSimpleWay(list){
   return _.reduce(list, function(num, memo){return num+memo;});
